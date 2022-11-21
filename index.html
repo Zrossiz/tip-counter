@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <section class="calculator-wrapper">
+        <div class="calculator-wrapper__title">
+            <h1>Калькулятор чаевых</h1>
+        </div>
+        <div class="calculator-wrapper__bill">
+            <label for="">Сумма счета</label>
+            <input class="calculator-wrapper__sum-input" placeholder="Введите сумму счета" type="number" id="sumId">
+        </div>
+        <div class="calculator-wrapper__counter-people">
+            <label for="">Количество людей</label>
+            <input class="calculator-wrapper__amount-input" placeholder="Введите количество людей" type="number" id="amountId">
+        </div>
+        <div class="calculator-wrapper__percent">
+            <label for="">Выберите качество обслуживания</label>
+            <select class="calculator-wrapper__select" name="choose percent" id="select">
+                <option value="choose">Выберите</option>
+                <option value="5">5%</option>
+                <option value="10">10%</option>
+                <option value="15">15%</option>
+                <option value="20">20%</option>
+                <option value="30">30%</option>
+            </select>
+        </div> 
+        <div class="calculator-wrapper__calculate">
+            <button class="calculator-wrapper__calculate-btn" onClick="sumTip()">
+                Рассчитать количество
+            </button>
+        </div>
+    </section>
+    <section class="result-wrapper">
+        <h1 class="visually-hidden">Чаевые</h1>
+        <div id="wrapper-sum" class="result-wrapper__result visually-hidden"></div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>
